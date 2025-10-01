@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="./Styling/BootStrap.css" />
+  </head>
+  <body style="background-color: rgba(0, 3, 56, 0.873);">
+    <!-- // ............................. InstaPay ............................. // -->
+    <div class="container pt-2 d-flex flex-column justify-content-center align-items-center gap-3">
+      <div class="col-6 bg-dark p-4 shadow rounded border">
+        <h1 class="text-white">Your Balance is : <span>......</span></h1>
+        <input class="form-control mb-3" placeholder="Enter Amount" />
+        <button class="btn btn-primary" onclick="Showbalance()">
+          Show Balance
+        </button>
+        <button class="btn btn-success" onclick="Deposit()">Deposit</button>
+        <button class="btn btn-danger" onclick="Withdraw()">Withdraw</button>
+        <button class="btn btn-warning" onclick="Transactions()">Transactions</button>
+      </div>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>initial Balance</th>
+            <th>Amount</th>
+            <th>Type</th>
+            <th>Remaining Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
